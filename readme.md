@@ -7,4 +7,4 @@
 ###
 ### Визуальное представление API-сервиса к которому делется запрос: https://www.dataaccess.com/webservicesserver/NumberConversion.wso?op=NumberToWords
 ###
-### Примеры запроса и овтета можно посмотреть в директории screenshots, которая находится в src
+### Пример запроса и ответа можно посмотреть в директории screenshots, которая находится в src
