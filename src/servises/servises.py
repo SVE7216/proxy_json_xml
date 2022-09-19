@@ -8,8 +8,11 @@ class Converter:
         self.data = data
 
     def xml_to_json(self):
-        json_format = json.dumps(xmltodict.parse(self.data))
+        dict_xml = xmltodict.parse(self.data)
+        dict_xml = dict(dict_xml)['soap:Envelope']['soap:Body']['m:NumberToWordsResponse']['m:NumberToWordsResult']
+        json_format = json.dumps(dict_xml)
         return json_format
+
 
     def json_to_xml(self):
         body = f'''<?xml version="1.0" encoding="utf-8"?>
