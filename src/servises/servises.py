@@ -3,7 +3,7 @@ import xmltodict
 
 
 class Converter:
-    """Класс для работы с конвертацией xml  в json"""
+    """Класс для работы с конвертацией форматов"""
     def __init__(self, data):
         self.data = data
 
