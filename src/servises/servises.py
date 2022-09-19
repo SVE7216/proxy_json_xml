@@ -10,7 +10,7 @@ class Converter:
     def xml_to_json(self):
         dict_xml = xmltodict.parse(self.data)
         dict_xml = dict(dict_xml)['soap:Envelope']['soap:Body']['m:NumberToWordsResponse']['m:NumberToWordsResult']
-        json_format = json.dumps(dict_xml)
+        json_format = json.dumps(dict_xml).replace('"', '')
         user_result = {'result': json_format}
         return user_result
 
